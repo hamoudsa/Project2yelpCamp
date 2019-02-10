@@ -1,0 +1,329 @@
+body{
+    background-color: #fafafa;
+}
+
+.logo{
+    height: 50px;
+}
+
+.navbar {
+    background-color: #000
+}
+
+.navbar a {
+    text-decoration: none;
+    color: rgb(196, 196, 196);
+    font-weight: bold;
+}
+
+.slider {
+    width: 100%;
+    height: 90vh;
+}
+
+.slider .inner {
+    margin: 0;
+    padding: 0;
+}
+
+.slider .carousel-inner {
+    height: auto;
+    overflow: hidden;
+    width: 100%;
+}
+
+.slider .carousel-inner img {
+    height: 90vh;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    color: #1da0a3;
+    text-align: center;
+    opacity: 1;
+}
+
+.carousel-control-next:hover,
+.carousel-control-prev:hover,
+.carousel-control-next:focus,
+.carousel-control-prev:focus {
+    color: #ed3f3f;
+}
+
+.fa-forward,.fa-backward{
+    font-size: 25px;
+}
+
+.carousel-indicators {
+    bottom: 50px;
+    cursor: pointer;
+}
+
+.carousel-indicators li {
+    background-color: #1da0a3;
+}
+
+.carousel-indicators .active {
+    background-color: #ed3f3f;
+}
+
+.delete {
+    position: fixed;
+    margin: 10px;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+
+.delete button:hover {
+    background-color: rgb(0, 0, 185);
+    border: 1px solid #00f
+}
+
+.carousel-control-next, .carousel-control-prev {
+    top: 350px;
+    height: 30px;
+    width: 2%;
+}
+
+.carousel-control-next {
+    right: 100px;
+}
+
+.carousel-control-prev {
+    left: 100px;
+}
+
+@media(max-width: 450px){
+    .slider { 
+        height: 35vh;
+    }
+
+    .slider .carousel-inner img {
+        height: 35vh;
+    }
+
+    .carousel-control-next, .carousel-control-prev {
+        top: 100px;
+        width: 4%;
+    }
+    .carousel-control-next {
+        right: 10px;
+    }
+    
+    .carousel-control-prev {
+        left: 10px;
+    }
+    .fa-forward,.fa-backward{
+        font-size: 15px;
+    }
+    .carousel-indicators {
+        bottom: 10px;
+        cursor: pointer;
+    }
+}
+
+
+.img-box img{
+    width: 100%;
+    height: auto;
+}
+
+.img-box {
+    padding: 10px;
+    overflow: hidden;
+}
+
+.contact-section {
+    padding: 30px 0 70px 0;
+}
+
+.contact-section h4 {
+    color: #ed3f3f;
+    font-size: 28;
+}
+
+.contact-section h5 {
+    font-size: 30px;
+}
+
+.contact-section .phone-number {
+    color: #fff;
+    background-color: #1da0a3;
+    padding: 15px 30px;
+    font-size: 25px;
+    margin: 0 auto;
+    margin-top: 20px;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+
+.contact-section .phone-number:hover{
+    background-color: #ed3f3f;
+}
+
+.contact-section .phone-number:hover i{
+    transform: rotate(20deg);
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+
+.contact-section .call-now {
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+.post-section {
+    background-color: #e2e2e2;
+    padding: 40px 0;
+}
+.post-section a {
+    text-decoration: none;
+    color: #000;
+}
+
+.post-section .post:hover {
+    color: #fff;
+    background-color: #1da0a3;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}
+
+.post-section .post:hover a {
+    color: #fff;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}
+
+.post-section .post {
+    padding: 20px 32px;
+    border-radius: 25px;
+}
+
+.post-section .post:hover .img-box {
+    background-color: rgb(197, 197, 197);
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}
+
+.post-section .img-box {
+    background-color: #1da0a3;
+    padding: 5px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.post-section .img-box img {
+    height: 240px;
+    border-radius: 10px;
+}
+
+/**************** post page ******************/
+
+.post-page {
+    background-color: rgb(241, 241, 241);
+}
+
+.post-page .post-img-box {
+    padding: 10px;
+    background-color: rgb(141, 141, 141);
+}
+
+.post-page .post-img-box img {
+    width: 100%
+}
+
+.post-page .postTime {
+    font-size: 15px;
+}
+
+.post-page button a {
+    text-decoration: none;
+}
+
+@media (max-width: 450px){
+    .post-page h1 {
+        font-size: 30px;
+    }
+
+    .post-page p {
+        font-size: 20px;
+    }
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.hero {
+    /* Sizing */
+    width: 100vw;
+    height: 100vh;
+    
+    /* Flexbox stuff */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* Text styles */
+    text-align: center;
+    color: white; /* ADD THIS LINE */
+    
+    /* Background styles */
+    background-image: url('https://codetheweb.blog/assets/img/posts/full-image-hero/image.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.hero h1 {
+    /* Text styles */
+    font-size: 5em;
+    
+    /* Margins */
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+.hero .btn {
+    /* Positioning and sizing */
+    display: block;
+    width: 215px;
+    
+    /* Padding and margins */
+    padding: 1em;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    /* Text styles */
+    color: white; /* CHANGE THIS LINE */
+    text-decoration: none;
+    font-size: 1.5em;
+    
+    /* Border styles */
+    border: 3px solid white; /* CHANGE THIS LINE */
+    border-radius: 20px;
+}

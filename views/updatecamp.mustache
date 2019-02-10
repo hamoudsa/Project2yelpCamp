@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>{{title}}</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <title>{{title}}</title>
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="/">
+    CAMPS
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+      </li>
+    </ul>
+    <ul class="navbar-nav nav-right">
+      {{#user}}
+      <li class="nav-item">
+        <a class="nav-link" href="/logout">logout</a>
+      </li>
+      {{/user}}
+      {{^user}}
+      <li class="nav-item mr-auto">
+        <a class="nav-link" href="/login">login</a>
+      </li>
+      <li class="nav-item mr-auto">
+        <a class="nav-link" href="/register">register</a>
+      </li>
+      {{/user}}
+    </ul>
+  </div>
+</nav>
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-12">
+            <h1>Update Camp</h1>
+            <form class="form-group row" action="/updatecamp/?id={{camp.campid}}&_method=PUT" method="POST">
+            <input type="hidden" name="_method" value="PUT">
+                <div class="form-group col-md-8 mb-2">
+                    <label class="sr-only">Name</label>
+                    <input type="text" class="form-control" placeholder="Camp Name" value="{{camp.name}}" name="name" required>
+                </div>
+                <div class="form-group col-md-8 mb-2">
+                    <label class="sr-only">Description</label>
+                    <textarea type="text" class="form-control" cols="75" rows="10" required placeholder="Camp Description" name="description">{{camp.description}}</textarea>
+                </div>
+                <div class="form-group col-md-8 mb-2">
+                    <label class="sr-only">Image</label>
+                    <input type="text" class="form-control" placeholder="Image Url" value="{{camp.imageurl}}" required name="image">
+                </div>
+                <input type="hidden" value="{{camp.campid}}" name="id">
+                <div class="col-md-8">
+                    <button type="submit" class="btn btn-primary mb-2">Update Camp</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<footer class="py-5 bg-dark">
+    <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; Your Website 2018</p>
+    </div>
+    <!-- /.container -->
+</footer>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
